@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import LoadingPage from "@/components/LoadingPage";
 import AboutClient from "@/components/AboutClient";
 import ContactClient from "@/components/ContactClient";
+import Historia from "@/components/Historia";
 
 const Home = () => {
     return (
@@ -13,6 +14,9 @@ const Home = () => {
             </section>
             <section id="about" className="relative w-full bg-[url(/aboutBackground.jpg)] bg-cover bg-bottom">
                 <AboutClient />
+            </section>
+            <section id="historia" className="relative w-full bg-[url(/NavBarBackground.jpg)] bg-contain">
+                <Historia />
             </section>
             <section id="variedad" className="relative w-full bg-[url(/NavBarBackground.jpg)] bg-contain">
             <Suspense fallback={<LoadingPage />}>

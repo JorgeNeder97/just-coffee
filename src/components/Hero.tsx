@@ -46,7 +46,7 @@ const Hero = () => {
                 <button
                     className="anim lg:w-[160px] bg-primary rounded px-2 py-2 place-self-end hover:cursor-pointer transition-all duration-[.2s] hover:scale-[1.1] hover:bg-primary-light active:scale-[.9]"
                 >
-                    <Link href="#variedad">Explorar Sabores</Link>
+                    <Link href="/coffees">Explorar Sabores</Link>
                 </button>
             </div>
         </div>

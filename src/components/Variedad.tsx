@@ -1,20 +1,17 @@
 import { Coffee } from '@/models/data';
 import CoffeeCard from './CoffeeCard';
+import Link from 'next/link';
 
-async function getCoffees() {
+async function getSomeCoffees() {
     const res = await fetch("http://localhost:3000/api/someCoffees");
     const data = await res.json();
-    await new Promise((resolve) => setTimeout(resolve, 3000))
     return data;
 }
 
 
 const Variedad = async () => {
 
-    // const [isOpen, setIsOpen] = useState<boolean>(false);
-
-    const coffees = await getCoffees();
-
+    const coffees = await getSomeCoffees();
     
     return (
         <div className="w-full flex flex-col gap-[100px] place-items-center place-content-center lg:py-[100px] lg:px-[50px]">
@@ -28,6 +25,12 @@ const Variedad = async () => {
                     ))
                 }
             </div>
+
+            <button
+                    className="anim lg:w-[260px] bg-primary rounded px-2 py-2 hover:cursor-pointer transition-all duration-[.2s] hover:scale-[1.1] hover:bg-primary-light active:scale-[.9]"
+                >
+                    <Link href="/coffees">Ver Todas Las Variedades</Link>
+            </button>
         </div>
     );
 };

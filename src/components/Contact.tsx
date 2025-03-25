@@ -45,15 +45,15 @@ const Contact = () => {
                 </div>
                 <div className="w-full flex flex-col place-items-center place-content-center gap-[50px]">
                     <div className="w-full flex place-items-center place-content-end gap-[10px]">
-                        <p>Developed By</p>
-                        <img src="/devlogo.png" className="w-[150px]" alt="Jorge Neder - FullStack Web Developer" />
-                    </div>
-                    <div className="w-full flex place-items-center place-content-end gap-[10px]">
                         <div className="flex flex-col gap-[10px] place-items-center">
                             <p className="text-[42px] font-bold tracking-widest">JUST COFFEE</p>
                             <p className="text-[14px] font-thin tracking-widest">Cada sobro cuenta una historia única</p>
                         </div>
                         <img src="/Logo.png" className="w-[150px]" alt="Just-Coffee Logo" />
+                    </div>
+                    <div className="w-full flex place-items-center place-content-end gap-[10px]">
+                        <p>Developed By</p>
+                        <img src="/devlogo.png" className="w-[150px]" alt="Jorge Neder - FullStack Web Developer" />
                     </div>
                 </div>
             </div>
