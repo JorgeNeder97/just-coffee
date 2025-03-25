@@ -22,6 +22,15 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/db/config/config.js",
+    "src/db/migrations/*.ts",
+    "src/db/models/*.ts",
+    "src/db/seeders/*.ts", "src/db/migrations/20250315002436-coffees.js", "src/db/seeders/20250315003358-coffees.js", "src/db/models/index.js", "src/db/models/Coffee.js",
+    ],
   "exclude": ["node_modules"]
 }

@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 const NavBar = () => {
     return (
-        <nav className="w-full h-[80px] py-4 bg-[url(/NavBarBackground.jpg)] bg-cover">
+        <nav className="w-full h-[80px] py-4 bg-[url(/NavBackground.jpg)] bg-cover">
             <ul className="flex place-items-center place-content-center gap-[30px]">
                 <motion.li
                     whileHover={{ scale: 1.5 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <Link href="/about">About Us</Link>
+                    <Link href="/coffees">Variedades</Link>
                 </motion.li>
                 <motion.li
                     whileHover={{ scale: 1.5 }}
@@ -28,7 +28,7 @@ const NavBar = () => {
                     whileHover={{ scale: 1.5 }}
                     whileTap={{ scale: 0.95 }}
                 >
-                    <Link href="">Contact</Link>
+                    <Link href="/#contacto">Contacto</Link>
                 </motion.li>
             </ul>
         </nav>
