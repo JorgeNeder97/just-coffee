@@ -12,7 +12,7 @@ const HistoriaContent = () => {
                 origin: 'bottom',
                 duration: 2000,
                 distance: '30px',
-                delay: 500,
+                delay: 100,
                 beforeReveal(domEl) {
                     if (domEl instanceof HTMLElement) {
                         domEl.style.transform = '';

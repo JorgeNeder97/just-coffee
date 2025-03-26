@@ -19,7 +19,7 @@ const Home = () => {
             <section id="historia" className="relative w-full bg-[url(/HistoriaBackground.jpg)] bg-contain">
                 <Historia />
             </section>
-            <section id="metodosPreparacion" className="relative w-full bg-[url(/HistoriaBackground.jpg)] bg-contain">
+            <section id="metodosPreparacion" className="relative w-full bg-[url(/Contact.jpg)] bg-cover">
                 <MetodosPreparacion />
             </section>
             <section id="variedad" className="relative w-full bg-[url(/DefaultBackground.jpg)] bg-contain">
@@ -27,7 +27,7 @@ const Home = () => {
                 <Variedad />
             </Suspense>
             </section>
-            <section className="relative w-full bg-[url(/contact.jpg)] bg-cover bg-top" id="contacto">
+            <section id="contacto" className="relative w-full bg-[url(/contact.jpg)] bg-cover bg-top">
                 <ContactClient />
             </section>
         </div>

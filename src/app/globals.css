@@ -43,6 +43,20 @@
     color: var(--color-red-700);
     cursor: not-allowed;
   }
+  .methodContent {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+  }
+  .methodTextContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    text-align: justify;
+  }
 }
 
 
