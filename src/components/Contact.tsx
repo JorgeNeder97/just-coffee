@@ -25,8 +25,8 @@ const Contact = () => {
     }, []);
 
     return (
-        <div className="w-full flex flex-col gap-[50px] place-items-center place-content-center pt-[50px] pb-[10px] px-[30px] lg:px-[100px]">
-            <h3 className="lg:text-[32px]">Contactanos</h3>
+        <div className="w-full flex flex-col gap-[100px] place-items-center place-content-center pt-[100px] pb-[50px] px-[30px] lg:px-[100px]">
+            <h3 className="lg:text-[32px] font-semibold">Contactanos</h3>
             <div className="w-full flex place-items-center place-content-center gap-[30px]">
                 <div className="w-full lg:w-[900px] flex flex-col place-items-start gap-[30px]">
                     <div className="flex flex-col gap-[15px]">

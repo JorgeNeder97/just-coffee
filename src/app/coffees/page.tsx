@@ -12,7 +12,7 @@ const Coffees = async () => {
     const coffees = await getCoffees();
 
     return (
-        <div className="w-full flex flex-col bg-[url(/NavBarBackground.jpg)] bg-contain gap-[100px] place-items-center place-content-center lg:py-[100px] lg:px-[50px]">
+        <div className="w-full flex flex-col bg-[url(/DefaultBackground.jpg)] bg-contain gap-[100px] place-items-center place-content-center lg:py-[100px] lg:px-[50px]">
             
             <h3 className="text-[32px]">Variedades</h3>
 

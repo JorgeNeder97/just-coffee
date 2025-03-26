@@ -16,7 +16,7 @@ const Variedad = async () => {
     return (
         <div className="w-full flex flex-col gap-[100px] place-items-center place-content-center lg:py-[100px] lg:px-[50px]">
             
-            <h3 className="text-[32px]">Variedades</h3>
+            <h3 className="text-[32px] font-semibold">Variedades</h3>
 
             <div className="w-full flex place-items-start place-content-center gap-[50px] flex-wrap">
                 {
@@ -27,7 +27,7 @@ const Variedad = async () => {
             </div>
 
             <button
-                    className="anim lg:w-[260px] bg-primary rounded px-2 py-2 hover:cursor-pointer transition-all duration-[.2s] hover:scale-[1.1] hover:bg-primary-light active:scale-[.9]"
+                    className="lg:w-[260px] bg-primary rounded px-2 py-2 hover:cursor-pointer transition-all duration-[.2s] hover:scale-[1.1] hover:bg-primary-light active:scale-[.9]"
                 >
                     <Link href="/coffees">Ver Todas Las Variedades</Link>
             </button>
