@@ -14,7 +14,7 @@ const Variedad = async () => {
     const coffees = await getSomeCoffees();
     
     return (
-        <div className="w-full flex flex-col gap-[100px] place-items-center place-content-center lg:py-[100px] lg:px-[50px]">
+        <div className="opacity-0 animate-fadeIn delay-300 w-full flex flex-col gap-[100px] place-items-center place-content-center lg:py-[100px] lg:px-[50px]">
             
             <h3 className="text-[32px] font-semibold">Variedades</h3>
 
