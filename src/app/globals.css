@@ -13,15 +13,16 @@
 
   --font-tropika: var(--font-tropika);
 
-  --animate-load: load .7s ease;
 
-  @keyframes load {
+  --animate-fadeIn: fadeIn 1s ease-out forwards;
+
+  @keyframes fadeIn {
     0% {
-      transform: translateY(100vh);
+      opacity: 0;
     }
 
     100% {
-      transform: translateY(0vh);
+      opacity: 1;
     }
   }
 

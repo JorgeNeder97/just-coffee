@@ -9,10 +9,14 @@ import { Prisma } from "@prisma/client";
 
 export async function GET(request: NextRequest, { params } : CoffeeParams) {
     try {
+        const coffeeId = Number((await params).coffeeId);
+        if (isNaN(coffeeId)) {
+            return NextResponse.json({ message: "ID inválido." }, { status: 400 });
+        };
         const coffee = await prisma.cafe.findFirst({
             where: {
                 // Transformamos a Number el params.coffeeId, ya que por defecto es un string
-                id: Number(params.coffeeId),
+                id: coffeeId,
             },
         });
         if(!coffee) return NextResponse.json({ message: "El registro buscado no existe." }, { status: 404 });
@@ -27,13 +31,14 @@ export async function GET(request: NextRequest, { params } : CoffeeParams) {
 
 export async function PATCH(request: Request, { params } : CoffeeParams) {
     try {
+        const coffeeId = Number((await params).coffeeId);
         const data = await request.json();
         const coffeeUpdated = await prisma.cafe.update({
             data: {
                 ...data
             },
             where: {
-                id: Number(params.coffeeId),
+                id: coffeeId,
             },
         });
         // Aqui no sirve poner una validación ya que directamente salta al catch
@@ -51,9 +56,10 @@ export async function PATCH(request: Request, { params } : CoffeeParams) {
 
 export async function DELETE(request: Request, { params } : CoffeeParams) {
     try {
+        const coffeeId = Number((await params).coffeeId);
         const coffeeDeleted = await prisma.cafe.delete({
             where: {
-                id: Number(params.coffeeId),
+                id: coffeeId,
             },
         });
         // Aqui no sirve poner una validación ya que directamente salta al catch

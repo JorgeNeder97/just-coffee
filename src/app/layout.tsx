@@ -20,7 +20,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
     title: "Just Coffee",
     description: "Un sitio para los amantes del café.",
-    icons: "Logo.png",
+    icons: "/Logo.png",
 };
 
 export default function RootLayout({

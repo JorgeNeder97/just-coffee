@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 const CoffeeCard = ({ coffee } : {coffee: Coffee}) => {
 
-
     return (
         <>
             <motion.div

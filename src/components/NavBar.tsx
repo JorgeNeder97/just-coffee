@@ -18,7 +18,7 @@ const NavBar = () => {
                 >
                     <Link href="/">
                         <img
-                            src="Logo.png"
+                            src="/Logo.png"
                             alt="El Logo de Just Coffee el cual esta compuesto por una deliciosa taza de café humeante rodeado de granos de café."
                             className="lg:w-[50px]"
                         />
