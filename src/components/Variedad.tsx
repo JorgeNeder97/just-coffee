@@ -21,7 +21,9 @@ const Variedad = async () => {
             <div className="w-full flex place-items-start place-content-center gap-[50px] flex-wrap">
                 {
                     coffees.map((coffee:Coffee, i:number) => (
-                        <CoffeeCard coffee={coffee} key={i} />
+                        <Link href={`http://localhost:3000/coffees/${coffee.id}`} key={i}>
+                            <CoffeeCard coffee={coffee} />
+                        </Link>
                     ))
                 }
             </div>

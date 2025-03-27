@@ -6,10 +6,12 @@ import AboutClient from "@/components/AboutClient";
 import ContactClient from "@/components/ContactClient";
 import Historia from "@/components/Historia";
 import MetodosPreparacionClient from "@/components/MetodosPreparacionClient";
+import ScrollUpButtonClient from "@/components/ScrollUpButtonClient";
 
 const Home = () => {
     return (
         <div className="w-full">
+            <ScrollUpButtonClient />
             <section id="hero" className="relative w-full h-[87vh] bg-[url(/Heros.jpg)] bg-cover bg-bottom">
                 <HeroClient />
             </section>
@@ -27,9 +29,6 @@ const Home = () => {
             <section id="metodosPreparacion" className="relative w-full bg-[url(/methods.jpg)] bg-cover">
                 <MetodosPreparacionClient />
             </section>
-            {/* <section id="beneficios" className="relative w-full bg-[url(/methods.jpg)] bg-cover">
-                <Beneficios />
-            </section> */}
             <section id="contacto" className="relative w-full bg-[url(/contact.jpg)] bg-cover bg-top">
                 <ContactClient />
             </section>

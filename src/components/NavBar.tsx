@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const NavBar = () => {
     return (
-        <nav className="w-full h-[80px] py-4 bg-[url(/NavBackground.jpg)] bg-cover">
+        <nav id="navbar" className="w-full h-[80px] py-4 bg-[url(/NavBackground.jpg)] bg-cover">
             <ul className="flex place-items-center place-content-center gap-[30px]">
                 <motion.li
                     whileHover={{ scale: 1.5 }}

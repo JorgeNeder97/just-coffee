@@ -10,7 +10,7 @@ const MetodosPreparacion = () => {
                 origin: "left",
                 duration: 2000,
                 distance: "60px",
-                delay: 50,
+                delay: 100,
                 beforeReveal(domEl) {
                     if (domEl instanceof HTMLElement) {
                         domEl.style.transform = "";

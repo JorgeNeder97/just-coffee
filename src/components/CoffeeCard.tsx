@@ -14,7 +14,7 @@ const CoffeeCard = ({ coffee } : {coffee: Coffee}) => {
                     {coffee.nombre}
                 </h5>
                 <img
-                    className="absolute brightness-50 object-cover lg:w-[350px] lg:h-[300px] rounded hover:brightness-75 transition-all duration-[.3s] ease-in-out"
+                    className="absolute brightness-50 object-cover lg:w-[350px] lg:h-[300px] rounded-xl hover:brightness-75 transition-all duration-[.3s] ease-in-out"
                     src={coffee.imagenUrl}
                     alt=""
                 />

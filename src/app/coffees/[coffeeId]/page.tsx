@@ -1,3 +1,4 @@
+import BackButton from "@/components/BackButton";
 import { CoffeeParams } from "@/models/data";
 
 async function getCoffee(coffeeId:number) {
@@ -18,7 +19,8 @@ const Coffee: React.FC<CoffeeParams> = async ({ params }) => {
     const coffee = await getCoffee(coffeeId);
 
     return (
-        <div className="w-full bg-[url(/DefaultBackground.jpg)] h-[calc(100vh-80px)] bg-contain lg:py-[80px]">
+        <div className="relative w-full bg-[url(/HistoriaBackground.jpg)] h-[calc(100vh-80px)] bg-contain lg:py-[80px]">
+            <BackButton href="/coffees" />
             <div className="opacity-0 animate-fadeIn delay-300 flex place-items-start place-content-center gap-[50px]">
                 <div className="lg:w-[500px] lg:h-[396px] brightness-75 flex place-items-center place-content-center hover:brightness-90 transition-all duration-[.5s] ease-in-out">
                     <img className="w-full lg:h-[396px] object-cover rounded-xl shadow-2xl" src={coffee.imagenUrl} alt={coffee.nombre} />
