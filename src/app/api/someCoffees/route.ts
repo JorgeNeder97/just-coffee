@@ -1,6 +1,5 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import { prisma } from "@/libs/prisma";
-import { Coffee, CoffeeParams } from "@/models/data";
 
 // En este archivo no pueden ir peticiones PUT, PATCH, DELETE o GET (que requieran params)
 // ya que hasta aquí NO EXISTE "params" porque no pasamos ningun parametro por las rutas.

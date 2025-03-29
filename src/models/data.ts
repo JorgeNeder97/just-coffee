@@ -1,12 +1,3 @@
-import React, { ReactNode } from "react";
-
-export interface Post {
-    userId: number,
-    id: number,
-    title: string,
-    body: string,
-};
-
 export interface Coffee {
     id: number,
     nombre: string,
@@ -20,21 +11,4 @@ export interface CoffeeParams {
     // Esta es la forma en la que se lo define.
     params: Promise<{ coffeeId: number }>,
     searchParams?: Promise<{}>,
-};
-
-export interface ModalProps {
-    children: ReactNode,
-    isOpen: boolean,
-    handleClose: () => void,
-}
-
-export interface PostProps {
-    post: Post
-};
-
-export interface PostParams {
-    params: {
-        postId: number,
-    },
-    searchParams?: {},
 };
