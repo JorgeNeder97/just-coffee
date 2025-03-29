@@ -39,10 +39,9 @@ const ScrollUpButton: React.FC = () => {
     <>
         <button
           onClick={scrollToTop}
-          
-          className={`${showButton ? "opacity-100" : "opacity-0 translate-y-[300%]"} fixed bottom-15 right-5 py-[20px] px-[23px] z-[50] bg-primary/50 hover:bg-primary text-white rounded-full shadow-lg hover:cursor-pointer trasition-all duration-[.5s] ease-in-out`}
+          className={`${showButton ? "opacity-100" : "opacity-0 translate-y-[300%]"} fixed bottom-15 right-5 py-[15px] lg:py-[20px] px-[18px] lg:px-[23px] z-[50] bg-primary/50 hover:bg-primary text-white rounded-full shadow-lg hover:cursor-pointer trasition-all duration-[.5s] ease-in-out`}
         >
-          <img src="/arrowUp.svg" className="w-[15px]" alt="Scroll hacia arriba" />
+          <img src="/arrowUp.svg" className="w-[10px] md:w-[15px]" alt="Scroll hacia arriba" />
         </button>
     </>
   );

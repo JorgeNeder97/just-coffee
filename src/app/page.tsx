@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div className="w-full">
             <ScrollUpButtonClient />
-            <section id="hero" className="relative w-full h-[87vh] bg-[url(/Heros.jpg)] bg-cover bg-bottom">
+            <section id="hero" className="relative w-full h-[calc(100vh-80px)] bg-[url(/Heros.jpg)] bg-cover bg-right lg:bg-bottom">
                 <HeroClient />
             </section>
             <section id="about" className="relative w-full bg-[url(/aboutBackground.jpg)] bg-cover bg-bottom">

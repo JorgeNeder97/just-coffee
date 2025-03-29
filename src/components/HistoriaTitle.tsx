@@ -22,7 +22,7 @@ const HistoriaTitle = () => {
         }
     }, []);
 
-  return <h3 className="historiaTitulo lg:text-[32px] font-semibold place-self-start mt-[10px] mb-[30px]">El Origen del Café</h3>
+  return <h3 className="historiaTitulo text-xl sm:text-[32px] font-semibold place-self-start mt-[10px] mb-[30px]">El Origen del Café</h3>
 };
 
 export default HistoriaTitle;
