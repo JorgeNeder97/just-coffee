@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 
@@ -59,11 +60,11 @@ const Contact = () => {
                             <p className="text-[32px] text-center lg:text-left sm:text-[42px] font-bold tracking-widest">JUST COFFEE</p>
                             <p className="text-[12px] text-center leading-[15px] lg:leading-normal lg:text-left sm:text-[14px] font-thin tracking-widest">Cada sobro cuenta una historia única</p>
                         </div>
-                        <img src="/Logo.png" className="w-[150px]" alt="Just-Coffee Logo" />
+                        <Image width={300} height={300} src="/Logo.png" className="w-[150px]" alt="Just-Coffee Logo" />
                     </div>
                     <div className="contactRight w-full flex place-items-center place-content-center lg:place-content-end gap-[10px]">
                         <p>Developed By</p>
-                        <img src="/devlogo.png" className="w-[150px]" alt="Jorge Neder - FullStack Web Developer" />
+                        <Image width={300} height={300} src="/devlogo.png" className="w-[150px]" alt="Jorge Neder - FullStack Web Developer" />
                     </div>
                 </div>
             </div>
