@@ -27,7 +27,7 @@ const Coffee: React.FC<CoffeeParams> = async ({ params }) => {
 
     if(coffee)
     return (
-        <div className="relative w-full bg-[url(/HistoriaBackground.jpg)] min-h-[calc(100vh-80px)] bg-contain py-[60px] px-[30px] lg:px-0 lg:py-[80px]">
+        <div className="relative w-full bg-[url(/HistoriaBackground.webp)] min-h-[calc(100vh-80px)] bg-contain py-[60px] px-[30px] lg:px-0 lg:py-[80px]">
             <BackButton href="/coffees" />
             <div className="opacity-0 animate-fadeIn delay-300 flex flex-col lg:flex-row place-items-center lg:place-items-start place-content-center gap-[15px] lg:gap-[50px]">
                 <div className="order-2 lg:order-1 lg:w-[500px] lg:h-[396px] brightness-75 flex place-items-center place-content-center hover:brightness-90 transition-all duration-[.5s] ease-in-out">

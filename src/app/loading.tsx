@@ -4,7 +4,7 @@ import BackButton from "@/components/BackButton";
 
 const loading = () => {
   return (
-    <div className="relative w-full h-[calc(100vh-80px)] bg-[url(/DefaultBackground.jpg)] bg-contain flex flex-col gap-[30px] place-items-center place-content-center">
+    <div className="relative w-full h-[calc(100vh-80px)] bg-[url(/DefaultBackground.webp)] bg-contain flex flex-col gap-[30px] place-items-center place-content-center">
         <BackButton href="/" />
         <Image width={300} height={300} src="/Logo.png" className="w-[100px]" alt="Cargando" />
         <p className="">CARGANDO</p>

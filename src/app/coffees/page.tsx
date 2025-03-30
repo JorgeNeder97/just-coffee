@@ -20,7 +20,7 @@ const Coffees = async () => {
     
     if(coffees)
     return (
-        <div className="relative w-full flex flex-col bg-[url(/DefaultBackground.jpg)] bg-contain place-items-center place-content-center py-[50px] lg:py-[100px] sm:px-[20px] lg:px-[50px]">
+        <div className="relative w-full flex flex-col bg-[url(/DefaultBackground.webp)] bg-contain place-items-center place-content-center py-[50px] lg:py-[100px] sm:px-[20px] lg:px-[50px]">
             <BackButton href="/" />
             <ScrollUpButton />
             <div className="opacity-0 animate-fadeIn delay-300 w-full flex flex-col place-items-center place-content-center gap-[50px] lg:gap-[100px]">

@@ -39,7 +39,7 @@ const MetodosPreparacion = () => {
                         <h4 className="sm:text-[24px] font-semibold">Café Espresso</h4>
                         <p className="text-[14px] sm:text-[16px] font-thin">El espresso es la base de muchas de las bebidas más populares de café. Se prepara forzando agua caliente a alta presión a través de los granos finamente molidos. Este método produce una bebida concentrada, rica en sabor y con una capa de crema dorada en la parte superior. Es la base para bebidas como el cappuccino, latte y macchiato.</p>
                     </div>
-                    <Image width={650} height={650} src="/Mespresso.jpg" className="rightSide lg:order-2 lg:w-[550px] rounded-xl brightness-75" alt="Café Espresso" />
+                    <Image width={650} height={650} src="/Mespresso.webp" className="rightSide lg:order-2 lg:w-[550px] rounded-xl brightness-75" alt="Café Espresso" />
                 </div>
                 <div className="methodContent lg:flex-row lg:place-items-start lg:gap-[50px]">
                     <div className="methodTextContent rightSide lg:order-2 lg:w-[550px] sm:leading-[30px]">
