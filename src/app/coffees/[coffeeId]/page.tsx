@@ -4,7 +4,7 @@ import BackButton from "@/components/BackButton";
 
 async function getCoffee(coffeeId:number) {
     try {
-        const res = await fetch(`http://localhost:3000/api/coffees/${coffeeId}`);
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/coffees/${coffeeId}`);
         const data = await res.json();
         return data;
     } catch (error) {

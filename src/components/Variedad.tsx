@@ -3,7 +3,7 @@ import CoffeeCard from './CoffeeCard';
 import Link from 'next/link';
 
 async function getSomeCoffees() {
-    const res = await fetch("http://localhost:3000/api/someCoffees");
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/someCoffees`);
     const data = await res.json();
     return data;
 }
@@ -21,7 +21,7 @@ const Variedad = async () => {
             <div className="w-full flex flex-col lg:flex-row place-items-center lg:place-items-start place-content-center gap-[50px] lg:flex-wrap">
                 {
                     coffees.map((coffee:Coffee, i:number) => (
-                        <Link href={`http://localhost:3000/coffees/${coffee.id}`} key={i}>
+                        <Link href={`${process.env.NEXT_PUBLIC_API_URL}/coffees/${coffee.id}`} key={i}>
                             <CoffeeCard coffee={coffee} />
                         </Link>
                     ))

@@ -44,7 +44,7 @@ const MetodosPreparacion = () => {
                 <div className="methodContent lg:flex-row lg:place-items-start lg:gap-[50px]">
                     <div className="methodTextContent rightSide lg:order-2 lg:w-[550px] sm:leading-[30px]">
                         <h4 className="sm:text-[24px] font-semibold">Filtrado o Café de Goteo</h4>
-                        <p className="text-[14px] sm:text-[16px] font-thin">Este método es uno de los más tradicionales y accesibles. Consiste en verter agua caliente sobre café molido en un filtro de papel o metálico, lo que permite que el café se "filtre" lentamente, extrayendo sus aceites y sabores. El café resultante es limpio, suave y sin la intensidad del espresso. Existen varias máquinas para este proceso, como las de goteo automáticas y las manuales (como las chemex).</p>
+                        <p className="text-[14px] sm:text-[16px] font-thin">Este método es uno de los más tradicionales y accesibles. Consiste en verter agua caliente sobre café molido en un filtro de papel o metálico, lo que permite que el café se filtre lentamente, extrayendo sus aceites y sabores. El café resultante es limpio, suave y sin la intensidad del espresso. Existen varias máquinas para este proceso, como las de goteo automáticas y las manuales (como las chemex).</p>
                     </div>
                     <Image width={650} height={650} src="/Mgoteo.png" className="leftSide lg:order-1 lg:w-[550px] rounded-xl brightness-75" alt="Café de Goteo" />
                 </div>

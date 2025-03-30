@@ -5,10 +5,10 @@ import BackButton from "@/components/BackButton";
 import ScrollUpButton from "@/components/ScrollUpButton";
 
 async function getCoffees() {
-    const res = await fetch("http://localhost:3000/api/coffees");
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/coffees`);
     const data = await res.json();
     return data;
-}
+};
 
 const Coffees = async () => {
     const coffees = await getCoffees();
@@ -22,7 +22,7 @@ const Coffees = async () => {
                 <div className="w-full flex place-items-start place-content-center gap-[50px] sm:gap-[20px] lg:gap-[50px] flex-wrap">
                     {
                         coffees.map((coffee:Coffee, i:number) => (
-                            <Link href={`http://localhost:3000/coffees/${coffee.id}`} key={i}>
+                            <Link href={`${process.env.NEXT_PUBLIC_API_URL}/coffees/${coffee.id}`} key={i}>
                                 <CoffeeCard coffee={coffee} />
                             </Link>
                         ))
