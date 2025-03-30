@@ -1,5 +1,5 @@
 import { CoffeeParams } from "@/models/data";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/libs/prisma";
 // Traemos Prisma para utilizar PrismaClientKnownError
 import { Prisma } from "@prisma/client";
@@ -7,7 +7,7 @@ import { Prisma } from "@prisma/client";
 // Siempre se verifica que error sea una instancia de Prisma.PrismaClientKnownRequestError
 // cuando trabajamos con validaciones que tienen que ver con un posible error al utilizar prisma.
 
-export async function GET({ params } : CoffeeParams) {
+export async function GET(request: NextRequest ,{ params } : CoffeeParams) {
     try {
         const coffeeId = Number((await params).coffeeId);
         if (isNaN(coffeeId)) {

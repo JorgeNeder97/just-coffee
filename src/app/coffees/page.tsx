@@ -12,7 +12,6 @@ async function getCoffees() {
 
 const Coffees = async () => {
     const coffees = await getCoffees();
-
     return (
         <div className="relative w-full flex flex-col bg-[url(/DefaultBackground.jpg)] bg-contain place-items-center place-content-center py-[50px] lg:py-[100px] sm:px-[20px] lg:px-[50px]">
             <BackButton href="/" />

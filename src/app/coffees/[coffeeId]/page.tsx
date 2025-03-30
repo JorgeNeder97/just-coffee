@@ -1,5 +1,6 @@
-import BackButton from "@/components/BackButton";
+import Image from "next/image";
 import { CoffeeParams } from "@/models/data";
+import BackButton from "@/components/BackButton";
 
 async function getCoffee(coffeeId:number) {
     try {
@@ -23,11 +24,11 @@ const Coffee: React.FC<CoffeeParams> = async ({ params }) => {
             <BackButton href="/coffees" />
             <div className="opacity-0 animate-fadeIn delay-300 flex flex-col lg:flex-row place-items-center lg:place-items-start place-content-center gap-[15px] lg:gap-[50px]">
                 <div className="order-2 lg:order-1 lg:w-[500px] lg:h-[396px] brightness-75 flex place-items-center place-content-center hover:brightness-90 transition-all duration-[.5s] ease-in-out">
-                    <img className="w-full hidden lg:inline-block lg:h-[396px] object-cover rounded-xl shadow-2xl" src={coffee.imagenUrl} alt={coffee.nombre} />
+                    <Image className="w-full hidden lg:inline-block lg:h-[396px] object-cover rounded-xl shadow-2xl" src={coffee.imagenUrl} alt={coffee.nombre} width={650} height={650} />
                 </div>
                 <div className="order-1 lg:order-2 w-full max-w-[500px] lg:w-[45vw] lg:max-w-none lg:h-[396px] flex flex-col gap-[30px] lg:gap-[0px] place-items-center lg:place-items-start lg:place-content-between">
                     <h3 className="text-xl lg:text-[32px] font-semibold">{coffee.nombre}</h3>
-                    <img className="w-full max-w-[500px] inline-block lg:hidden lg:h-[396px] object-cover rounded-xl shadow-2xl" src={coffee.imagenUrl} alt={coffee.nombre} />
+                    <Image className="w-full max-w-[500px] inline-block lg:hidden lg:h-[396px] object-cover rounded-xl shadow-2xl" src={coffee.imagenUrl} alt={coffee.nombre} width={650} height={650} />
                     <ul className="flex flex-col gap-[15px] place-self-start">
                         <h4 className="font-medium text-[18px] lg:text-[20px]">Ingredientes</h4>
                         {

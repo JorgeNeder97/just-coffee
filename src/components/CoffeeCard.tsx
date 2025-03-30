@@ -1,9 +1,9 @@
 "use client";
+import Image from "next/image";
 import { Coffee } from "@/models/data";
 import { motion } from "framer-motion";
 
 const CoffeeCard = ({ coffee } : {coffee: Coffee}) => {
-
     return (
         <>
             <motion.div
@@ -13,10 +13,12 @@ const CoffeeCard = ({ coffee } : {coffee: Coffee}) => {
                 <h5 className="sm:text-[20px] z-10 pt-[10px] text-end hover:tracking-widest hover:translate-x-[-2px] transition-all duration-[.3s]">
                     {coffee.nombre}
                 </h5>
-                <img
+                <Image
                     className="absolute brightness-50 object-cover sm:w-[350px] h-[200px] sm:h-[300px] rounded-xl hover:brightness-75 transition-all duration-[.3s] ease-in-out"
                     src={coffee.imagenUrl}
                     alt=""
+                    width={650}
+                    height={650}
                 />
             </motion.div>
         </>
