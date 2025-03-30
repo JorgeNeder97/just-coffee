@@ -21,11 +21,11 @@ const Home = () => {
             <section id="historia" className="relative w-full bg-[url(/HistoriaBackground.webp)] bg-contain">
                 <Historia />
             </section>
-            {/* <section id="variedad" className="relative w-full bg-[url(/DefaultBackground.webp)] bg-contain">
+            <section id="variedad" className="relative w-full bg-[url(/DefaultBackground.webp)] bg-contain">
                 <Suspense fallback={<LoadingPage />}>
                     <Variedad />
                 </Suspense>
-            </section> */}
+            </section>
             <section id="metodosPreparacion" className="relative w-full bg-[url(/methods.webp)] bg-cover">
                 <MetodosPreparacionClient />
             </section>
