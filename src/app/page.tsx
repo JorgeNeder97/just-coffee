@@ -10,10 +10,10 @@ import ScrollUpButtonClient from "@/components/ScrollUpButtonClient";
 
 const Home = () => {
     return (
-        <div className="w-full">
+        <div className="w-full overflow-x-hidden overflow-y-visible">
             <ScrollUpButtonClient />
             <section id="hero" className="relative w-full h-[calc(100vh-80px)] bg-[url(/Heros.webp)] bg-cover bg-right lg:bg-bottom">
-                <HeroClient />
+                    <HeroClient />
             </section>
             <section id="about" className="relative w-full bg-[url(/aboutBackground.webp)] bg-cover bg-bottom">
                 <AboutClient />
@@ -21,11 +21,11 @@ const Home = () => {
             <section id="historia" className="relative w-full bg-[url(/HistoriaBackground.webp)] bg-contain">
                 <Historia />
             </section>
-            <section id="variedad" className="relative w-full bg-[url(/DefaultBackground.webp)] bg-contain">
-            <Suspense fallback={<LoadingPage />}>
-                <Variedad />
-            </Suspense>
-            </section>
+            {/* <section id="variedad" className="relative w-full bg-[url(/DefaultBackground.webp)] bg-contain">
+                <Suspense fallback={<LoadingPage />}>
+                    <Variedad />
+                </Suspense>
+            </section> */}
             <section id="metodosPreparacion" className="relative w-full bg-[url(/methods.webp)] bg-cover">
                 <MetodosPreparacionClient />
             </section>
