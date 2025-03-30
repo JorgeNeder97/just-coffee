@@ -8,7 +8,7 @@ async function getCoffee(coffeeId:number) {
          const coffee = await prisma.cafe.findFirst({
             where: {
                 // Transformamos a Number el params.coffeeId, ya que por defecto es un string
-                id: coffeeId,
+                id: Number(coffeeId),
             },
         });
         if(!coffee) return;
