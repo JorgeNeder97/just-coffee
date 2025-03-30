@@ -54,7 +54,7 @@ export async function PATCH(request: Request, { params } : CoffeeParams) {
     };
 };
 
-export async function DELETE({ params } : CoffeeParams) {
+export async function DELETE(request: NextRequest, { params } : CoffeeParams) {
     try {
         const coffeeId = Number((await params).coffeeId);
         const coffeeDeleted = await prisma.cafe.delete({
