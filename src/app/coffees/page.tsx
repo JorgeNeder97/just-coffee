@@ -29,7 +29,7 @@ const Coffees = async () => {
                 <div className="w-full flex place-items-start place-content-center gap-[50px] sm:gap-[20px] lg:gap-[50px] flex-wrap">
                     {
                         coffees.map((coffee:Coffee, i:number) => (
-                            <Link href={`${process.env.NEXT_PUBLIC_API_URL}/coffees/${coffee.id}`} key={i}>
+                            <Link href={`/coffees/${coffee.id}`} key={i}>
                                 <CoffeeCard coffee={coffee} />
                             </Link>
                         ))

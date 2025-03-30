@@ -30,7 +30,7 @@ const Variedad = async () => {
             <div className="w-full flex flex-col lg:flex-row place-items-center lg:place-items-start place-content-center gap-[50px] lg:flex-wrap">
                 {
                     coffees.map((coffee:Coffee, i:number) => (
-                        <Link href={`${process.env.NEXT_PUBLIC_API_URL}/coffees/${coffee.id}`} key={i}>
+                        <Link href={`/coffees/${coffee.id}`} key={i}>
                             <CoffeeCard coffee={coffee} />
                         </Link>
                     ))
