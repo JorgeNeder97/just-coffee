@@ -3,15 +3,22 @@ import CoffeeCard from "@/components/CoffeeCard";
 import Link from "next/link";
 import BackButton from "@/components/BackButton";
 import ScrollUpButton from "@/components/ScrollUpButton";
+import { prisma } from "@/libs/prisma";
 
 async function getCoffees() {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/coffees`);
-    const data = await res.json();
-    return data;
+    try {
+        const cafes = await prisma.cafe.findMany();
+        if(!cafes) return;
+        return cafes;
+    } catch (error) {
+        console.log(error);        
+    }
 };
 
 const Coffees = async () => {
     const coffees = await getCoffees();
+    
+    if(coffees)
     return (
         <div className="relative w-full flex flex-col bg-[url(/DefaultBackground.jpg)] bg-contain place-items-center place-content-center py-[50px] lg:py-[100px] sm:px-[20px] lg:px-[50px]">
             <BackButton href="/" />

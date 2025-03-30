@@ -1,12 +1,18 @@
 import Image from "next/image";
 import { CoffeeParams } from "@/models/data";
 import BackButton from "@/components/BackButton";
+import { prisma } from "@/libs/prisma";
 
 async function getCoffee(coffeeId:number) {
     try {
-        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/coffees/${coffeeId}`);
-        const data = await res.json();
-        return data;
+         const coffee = await prisma.cafe.findFirst({
+            where: {
+                // Transformamos a Number el params.coffeeId, ya que por defecto es un string
+                id: coffeeId,
+            },
+        });
+        if(!coffee) return;
+        return coffee;
     } catch (error) {
         console.log(error);
         return null;
@@ -19,6 +25,7 @@ const Coffee: React.FC<CoffeeParams> = async ({ params }) => {
     const coffeeId = (await params).coffeeId;
     const coffee = await getCoffee(coffeeId);
 
+    if(coffee)
     return (
         <div className="relative w-full bg-[url(/HistoriaBackground.jpg)] min-h-[calc(100vh-80px)] bg-contain py-[60px] px-[30px] lg:px-0 lg:py-[80px]">
             <BackButton href="/coffees" />

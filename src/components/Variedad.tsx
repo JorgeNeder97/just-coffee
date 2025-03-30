@@ -1,11 +1,19 @@
 import { Coffee } from '@/models/data';
 import CoffeeCard from './CoffeeCard';
 import Link from 'next/link';
+import { prisma } from '@/libs/prisma';
 
 async function getSomeCoffees() {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/someCoffees`);
-    const data = await res.json();
-    return data;
+    try {
+        const cafes = await prisma.cafe.findMany({
+            take: 3,
+        });
+        if(!cafes) return;
+        return cafes;
+    } catch (error) {
+        console.log(error);
+        return null;    
+    }
 }
 
 
@@ -13,6 +21,7 @@ const Variedad = async () => {
 
     const coffees = await getSomeCoffees();
     
+    if(coffees)
     return (
         <div className="opacity-0 animate-fadeIn delay-300 w-full flex flex-col gap-[50px] lg:gap-[100px] place-items-center place-content-center py-[50px] lg:py-[100px] lg:px-[50px]">
             
