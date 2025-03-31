@@ -34,11 +34,11 @@ const Contact = () => {
                             <p className="text-[32px] text-center lg:text-left sm:text-[42px] font-bold tracking-widest">JUST COFFEE</p>
                             <p className="text-[12px] text-center leading-[15px] lg:leading-normal lg:text-left sm:text-[14px] font-thin tracking-widest">Cada sobro cuenta una historia única</p>
                         </div>
-                        <Image width={150} height={150} src="/Logo.png" className="w-[150px]" alt="Just-Coffee Logo" />
+                        <Image width={150} height={150} unselectable="on" style={{ userSelect: "none" }} src="/Logo.png" className="w-[150px]" alt="Just-Coffee Logo" />
                     </div>
                     <div className="fromRight w-full flex place-items-center place-content-center lg:place-content-end gap-[10px]">
                         <p>Developed By</p>
-                        <Image width={150} height={150} src="/devlogo.png" className="w-[150px]" alt="Jorge Neder - FullStack Web Developer" />
+                        <Image width={150} height={150} unselectable="on" style={{ userSelect: "none" }} src="/devlogo.png" className="w-[150px]" alt="Jorge Neder - FullStack Web Developer" />
                     </div>
                 </div>
             </div>

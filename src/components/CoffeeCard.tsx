@@ -36,6 +36,8 @@ const CoffeeCard = ({ coffee } : {coffee: Coffee}) => {
                     alt=""
                     width={650}
                     height={650}
+                    unselectable="on"
+                    style={{ userSelect: "none" }}
                 />
             </motion.div>
         </>
