@@ -9,6 +9,7 @@ import MetodosPreparacionClient from "@/components/MetodosPreparacionClient";
 import ScrollUpButtonClient from "@/components/ScrollUpButtonClient";
 
 const Home = () => {
+    
     return (
         <div className="w-full overflow-x-hidden overflow-y-visible">
             <ScrollUpButtonClient />

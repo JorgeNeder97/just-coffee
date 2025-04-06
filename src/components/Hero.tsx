@@ -1,14 +1,18 @@
 "use client";
 import Link from "next/link";
 import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 import revealElements from '@/hooks/ScrollReveal';
 
 const Hero = () => {
 
+    const router = useRouter();
+
     useEffect(() => {
         revealElements();
     }, []);
-
+    
+    router.refresh();
     return (
         <div className="w-full h-[calc(100vh-80px)] py-[50px] flex flex-col lg:flex-row place-items-center place-content-center lg:place-content-end">
             <div className="w-full lg:w-[550px] lg:pr-[7vw] h-[100%] flex flex-col place-content-center place-items-center lg:place-content-start lg:place-items-end gap-[45px] lg:gap-[50px]">
