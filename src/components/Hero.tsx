@@ -14,7 +14,7 @@ const Hero = () => {
     
     router.refresh();
     return (
-        <div className="w-full h-[calc(100vh-80px)] py-[50px] flex flex-col lg:flex-row place-items-center place-content-center lg:place-content-end">
+        <div className="w-full h-[calc(100vh-80px)] min-h-[680px] py-[50px] flex flex-col lg:flex-row place-items-center place-content-center lg:place-content-end">
             <div className="w-full lg:w-[550px] lg:pr-[7vw] h-[100%] flex flex-col place-content-center place-items-center lg:place-content-start lg:place-items-end gap-[45px] lg:gap-[50px]">
                 <h2 className="fromRight text-xl sm:text-3xl font-semibold tracking-tight lg:tracking-[-.5px]">
                     Descubre el Mundo del Café
