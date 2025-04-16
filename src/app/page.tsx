@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <div className="w-full overflow-x-hidden overflow-y-visible">
             <ScrollUpButtonClient />
-            <section id="hero" className="relative w-full h-[calc(100vh-80px)] bg-[url(/Heros.webp)] bg-cover bg-right lg:bg-bottom">
+            <section id="hero" className="relative w-full h-[calc(100vh-80px)] min-h-[680px] bg-[url(/Heros.webp)] bg-cover bg-right lg:bg-bottom">
                     <HeroClient />
             </section>
             <section id="about" className="relative w-full bg-[url(/aboutBackground.webp)] bg-cover bg-bottom">
