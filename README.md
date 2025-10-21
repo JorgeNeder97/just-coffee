@@ -27,8 +27,8 @@ Además, quise experimentar con la estructura de un proyecto real: rutas, datos 
 ## 📂 Estructura del proyecto  
 ```
 .
-├── data/              # contenido estático (por ejemplo, café, productos, etc)  
-├── public/            # assets públicos (imagenes, íconos, etc)  
+├── data/              # contenido estático  
+├── public/            # assets públicos  
 ├── src/               # código fuente  
 │   ├── app/           # rutas de Next.js
 │   ├── components/    # componentes reutilizables
