@@ -1,18 +1,16 @@
+import fs from "fs";
+import path from "path";
 import Image from "next/image";
-import { CoffeeParams } from "@/models/data";
+import type { Coffee, CoffeeParams } from "@/models/data";
 import BackButton from "@/components/BackButton";
-import { prisma } from "@/libs/prisma";
 
 async function getCoffee(coffeeId:number) {
     try {
-         const coffee = await prisma.cafe.findFirst({
-            where: {
-                // Transformamos a Number el params.coffeeId, ya que por defecto es un string
-                id: Number(coffeeId),
-            },
-        });
-        if(!coffee) return;
-        return coffee;
+        const filePath = path.join(process.cwd(), "data", "coffees.json");
+        const jsonData = fs.readFileSync(filePath, "utf8");
+        const coffees: Coffee[] = JSON.parse(jsonData);
+        const coffee = coffees.find((c) => c.id === Number(coffeeId));
+        return coffee || null;
     } catch (error) {
         console.log(error);
         return null;

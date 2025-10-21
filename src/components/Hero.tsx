@@ -10,9 +10,9 @@ const Hero = () => {
 
     useEffect(() => {
         revealElements();
-    }, []);
+        router.refresh();
+    }, [router]);
     
-    router.refresh();
     return (
         <div className="w-full h-[calc(100vh-80px)] min-h-[680px] py-[50px] flex flex-col lg:flex-row place-items-center place-content-center lg:place-content-end">
             <div className="w-full lg:w-[550px] lg:pr-[7vw] h-[100%] flex flex-col place-content-center place-items-center lg:place-content-start lg:place-items-end gap-[45px] lg:gap-[50px]">

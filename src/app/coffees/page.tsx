@@ -3,11 +3,14 @@ import CoffeeCard from "@/components/CoffeeCard";
 import Link from "next/link";
 import BackButton from "@/components/BackButton";
 import ScrollUpButton from "@/components/ScrollUpButton";
-import { prisma } from "@/libs/prisma";
+import fs from "fs";
+import path from "path";
 
-async function getCoffees() {
+async function getCoffees(): Promise<Coffee[] | undefined> {
     try {
-        const cafes = await prisma.cafe.findMany();
+        const filePath = path.join(process.cwd(), "data", "coffees.json");
+        const jsonData = fs.readFileSync(filePath, "utf8");
+        const cafes = JSON.parse(jsonData);
         if(!cafes) return;
         return cafes;
     } catch (error) {

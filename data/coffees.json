@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "nombre": "Latte",
+        "ingredientes": [
+            "1 espresso",
+            "250 ml de leche vaporizada",
+            "Un toque de espuma de leche"
+        ],
+        "descripcion": "El Latte, cuyo nombre significa 'leche' en italiano, es una bebida suave y cremosa originaria de Italia. Se caracteriza por una mayor cantidad de leche vaporizada que el cappuccino, lo que lo convierte en una opción menos intensa y más accesible para quienes disfrutan del sabor del café suave.",
+        "imagenUrl": "/coffees/CafeLatte.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Espresso",
+        "ingredientes": ["Granos de café molido", "Agua a alta presión"],
+        "descripcion": "El Espresso es la base de casi todas las bebidas de café y se originó en Italia a principios del siglo XX. Se prepara forzando agua caliente a través de café finamente molido utilizando alta presión. El resultado es un café concentrado con un sabor fuerte y una capa de crema en la parte superior.",
+        "imagenUrl": "/coffees/CafeExpresso.webp"
+    },
+    {
+        "id": 3,
+        "nombre": "Cappuccino",
+        "ingredientes": [
+            "1 espresso",
+            "200 ml de leche vaporizada",
+            "Espuma de leche"
+        ],
+        "descripcion": "El Cappuccino es una bebida italiana que data de principios del siglo XX. Su nombre proviene de la Capuchina, una orden religiosa cuyas túnicas marrones recuerdan al color del café. Se caracteriza por su equilibrio perfecto entre espresso, leche vaporizada y espuma, creando una textura suave y cremosa.",
+        "imagenUrl": "/coffees/CafeCapuccino.webp"
+    },
+    {
+        "id": 4,
+        "nombre": "Americano",
+        "ingredientes": ["1 espresso", "Agua caliente"],
+        "descripcion": "El Americano, originado en la Segunda Guerra Mundial, fue creado por los soldados estadounidenses en Italia, quienes diluían el espresso con agua caliente para suavizar el sabor fuerte del café italiano. El resultado es una bebida más ligera que un espresso pero aún conserva su rica intensidad.",
+        "imagenUrl": "/coffees/CafeAmericano.webp"
+    },
+    {
+        "id": 5,
+        "nombre": "Mocha",
+        "ingredientes": [
+            "1 espresso",
+            "200 ml de leche vaporizada",
+            "50 ml de jarabe de chocolate",
+            "Crema batida"
+        ],
+        "descripcion": "El Mocha es una deliciosa combinación de espresso, leche vaporizada y chocolate. Su nombre proviene de la ciudad de Mocha en Yemen, que fue un importante puerto comercial de café en el siglo XV. Esta bebida es ideal para los amantes del chocolate y del café por igual.",
+        "imagenUrl": "/coffees/CafeMocha.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Flat White",
+        "ingredientes": ["1 espresso", "200 ml de leche vaporizada"],
+        "descripcion": "El Flat White tiene sus raíces en Australia y Nueva Zelanda y se parece a un latte, pero con una textura más densa y menos espuma. La leche vaporizada se prepara de manera que quede más suave, lo que da como resultado una bebida cremoso y fuerte, pero no tan espumosa.",
+        "imagenUrl": "/coffees/CafeFlatWhite.webp"
+    },
+    {
+        "id": 7,
+        "nombre": "Cortado",
+        "ingredientes": ["1 espresso", "20-30 ml de leche caliente"],
+        "descripcion": "El Cortado es una bebida originaria de España que se prepara con una proporción igual de espresso y leche caliente. Su nombre proviene del verbo 'cortar', ya que la leche 'corta' la intensidad del espresso, suavizando el sabor sin perder la esencia del café.",
+        "imagenUrl": "/coffees/CafeCortado.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Ristretto",
+        "ingredientes": ["Granos de café molido", "Agua a alta presión"],
+        "descripcion": "El Ristretto es un espresso 'más corto', en el que se utiliza la mitad de agua que en un espresso tradicional, lo que resulta en una bebida más concentrada y rica en sabor. Esta bebida se originó en Italia y es ideal para los que buscan una experiencia intensa de café.",
+        "imagenUrl": "/coffees/CafeRistretto.webp"
+    },
+    {
+        "id": 9,
+        "nombre": "Affogato",
+        "ingredientes": ["1 espresso", "Una bola de helado de vainilla"],
+        "descripcion": "El Affogato es un postre italiano que combina la calidez del espresso con la suavidad del helado. La palabra 'affogato' significa 'ahogado' en italiano, ya que el espresso se vierte directamente sobre el helado, creando un contraste delicioso entre lo caliente y lo frío.",
+        "imagenUrl": "/coffees/CafeAffogato.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "Café con Leche",
+        "ingredientes": ["1 espresso", "200 ml de leche caliente"],
+        "descripcion": "Una clásica bebida española que combina espresso con leche caliente en una proporción aproximada de 1:1. El Café con Leche es una opción perfecta para quienes buscan una bebida reconfortante y no tan fuerte como el espresso puro.",
+        "imagenUrl": "/coffees/CafeConLeche.jpg"
+    },
+    {
+        "id": 11,
+        "nombre": "Nitro Coffee",
+        "ingredientes": ["Café frío", "Nitrógeno líquido"],
+        "descripcion": "El Nitro Coffee es un café frío infusionado con nitrógeno, lo que le da una textura espumosa y suave. Originado en cafeterías especializadas, esta bebida ha ganado popularidad por su sabor cremoso y refrescante. Se sirve generalmente en un grifo de cerveza, similar a la cerveza de barril.",
+        "imagenUrl": "/coffees/CafeNitro.jpg"
+    },
+    {
+        "id": 12,
+        "nombre": "Café Turco",
+        "ingredientes": ["Café molido fino", "Agua", "Azúcar (opcional)"],
+        "descripcion": "El Café Turco es una bebida tradicional de Oriente Medio, famosa por su preparación única. El café se hierve en un pequeño recipiente llamado 'cezve' con agua y azúcar (según preferencia) hasta que se forma espuma. Se sirve sin filtrar, lo que le da una textura espesa y rica.",
+        "imagenUrl": "/coffees/CafeTurco.jpg"
+    },
+    {
+        "id": 13,
+        "nombre": "Café Helado",
+        "ingredientes": ["1 espresso", "Hielo", "Leche (opcional)"],
+        "descripcion": "El Café Helado es una bebida refrescante y perfecta para los días calurosos. Se prepara vertiendo un espresso sobre hielo, y a veces se le añade leche o crema. Su sabor fuerte y frío lo convierte en una alternativa veraniega al café tradicional.",
+        "imagenUrl": "/coffees/CafeHelado.webp"
+    },
+    {
+        "id": 14,
+        "nombre": "Café Bombón",
+        "ingredientes": ["1 espresso", "Leche condensada"],
+        "descripcion": "El Café Bombón es una bebida originaria de España que combina la intensidad del espresso con la dulzura de la leche condensada. Se sirve en un vaso pequeño, mostrando claramente las capas de café y leche condensada, lo que le da un aspecto visual atractivo.",
+        "imagenUrl": "/coffees/CafeBombon.webp"
+    },
+    {
+        "id": 15,
+        "nombre": "Irish Coffee",
+        "ingredientes": ["1 espresso", "Whisky irlandés", "Crema batida"],
+        "descripcion": "El Irish Coffee es una bebida alcohólica que combina café, whisky irlandés y crema batida. Fue inventado en Irlanda en la década de 1940 como una forma de calentar a los viajeros durante el invierno. Es una mezcla perfecta de sabores fuertes y suaves.",
+        "imagenUrl": "/coffees/CafeIrlandes.jpg"
+    },
+    {
+        "id": 16,
+        "nombre": "Café Vienés",
+        "ingredientes": ["1 espresso", "Crema batida", "Chocolate en polvo"],
+        "descripcion": "El Café Vienés es una bebida de lujo originaria de Viena, Austria. Se sirve en una taza grande, con una capa generosa de crema batida en la parte superior, decorada con chocolate en polvo. Esta es una bebida suave y elegante, ideal para ocasiones especiales.",
+        "imagenUrl": "/coffees/CafeVienes.webp"
+    },
+    {
+        "id": 17,
+        "nombre": "Café Clásico de Colombia",
+        "ingredientes": ["Café molido colombiano", "Agua"],
+        "descripcion": "El Café Clásico de Colombia es conocido mundialmente por su sabor suave y equilibrado. Cultivado en las montañas de Colombia, este café tiene notas suaves y afrutadas que lo hacen único en el mundo del café.",
+        "imagenUrl": "/coffees/CafeColombiano.webp"
+    },
+    {
+        "id": 18,
+        "nombre": "Caramel Macchiato",
+        "ingredientes": [
+            "1 espresso",
+            "200ml de leche vaporizada",
+            "15ml de jarabe de vainilla",
+            "Salsa de caramelo (para decorar y endulzar)"
+        ],
+        "descripcion": "El Caramel Macchiato fue popularizado por Starbucks en 1996 en Estados Unidos. Se creó como una variante dulce del macchiato tradicional, combinando espresso, leche vaporizada, jarabe de vainilla y salsa de caramelo.",
+        "imagenUrl": "/coffees/CaramelMachiatto.webp"
+    }
+]
