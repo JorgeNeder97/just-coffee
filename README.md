@@ -39,7 +39,7 @@ Además, quise experimentar con la estructura de un proyecto real: rutas, datos 
 └── README.md  
 ```
 
-## 🚀 Cómo ejecutar localmente  
+## 🚀 Cómo ejecutar localmente (debes tener instalado NodeJS en tu ordenador)  
 1. Clona este repositorio:  
    ```bash
    git clone https://github.com/JorgeNeder97/just-coffee.git
